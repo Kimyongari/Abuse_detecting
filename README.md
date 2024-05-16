@@ -38,48 +38,49 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     
     e. 세 모델을 softvoting 방식으로 앙상블 한 모델을 만들고, 결과를 반환.
 #### 1DCNN model
-Precision: 0.89545
+Precision: 0.89409
 
 Recall: 1.00000
 
-F1 Score: 0.94484
+F1 Score: 0.94408
 
-Accuracy : 0.85195
+Accuracy : 0.84180
 
-ROC AUC Score: 0.60345
+ROC AUC Score: 0.61947
+
 
 #### GRU model
-Precision: 0.95273
+Precision: 0.92468
 
-Recall: 0.88663
+Recall: 0.98072
 
-F1 Score: 0.91849
+F1 Score: 0.95187
 
-Accuracy : 0.73134
+Accuracy : 0.80523
 
-ROC AUC Score: 0.79389
+ROC AUC Score: 0.73372
 
 #### BiDirectional LSTM model
-Precision: 0.92985
+Precision: 0.93127
 
-Recall: 0.96447
+Recall: 0.95179
 
-F1 Score: 0.94684
+F1 Score: 0.94142
 
-Accuracy : 0.80042
+Accuracy : 0.78084
 
-ROC AUC Score: 0.73511
+ROC AUC Score: 0.75023
 
 #### ensembeld_model
-Precision: 0.92640
+Precision: 0.91487
 
-Recall: 0.97970
+Recall: 0.99174
 
-F1 Score: 0.95230
+F1 Score: 0.95175
 
-Accuracy : 0.81357
+Accuracy : 0.82003
 
-ROC AUC Score: 0.72548
+ROC AUC Score: 0.69941
 
 
 
