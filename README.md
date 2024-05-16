@@ -37,7 +37,7 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     d. 각 모델의 성능을 출력한다.
     
     e. 세 모델을 softvoting 방식으로 앙상블 한 모델을 만들고, 결과를 반환.
-##### 1DCNN model
+#### 1DCNN model
 Precision: 0.89545
 
 Recall: 1.00000
@@ -48,7 +48,7 @@ Accuracy : 0.85195
 
 ROC AUC Score: 0.60345
 
-##### GRU model
+#### GRU model
 Precision: 0.95273
 
 Recall: 0.88663
