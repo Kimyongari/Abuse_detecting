@@ -45,49 +45,49 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     e. 세 모델을 softvoting 방식으로 앙상블 한 모델을 만들고, 결과를 반환.
     
 #### 1DCNN model
-Precision: 0.89409
+Precision: 0.91497
 
-Recall: 1.00000
+Recall: 0.99018
 
-F1 Score: 0.94408
+F1 Score: 0.95109
 
-Accuracy : 0.84180
+Accuracy : 0.82327
 
-ROC AUC Score: 0.61947
+ROC AUC Score: 0.69267
 
 
 #### GRU model
-Precision: 0.92468
+Precision: 0.95468
 
-Recall: 0.98072
+Recall: 0.80123
 
-F1 Score: 0.95187
+F1 Score: 0.87125
 
-Accuracy : 0.80523
+Accuracy : 0.66810
 
-ROC AUC Score: 0.73372
+ROC AUC Score: 0.77561
 
 #### BiDirectional LSTM model
-Precision: 0.93127
+Precision: 0.94499
 
-Recall: 0.95179
+Recall: 0.94847
 
-F1 Score: 0.94142
+F1 Score: 0.94672
 
-Accuracy : 0.78084
+Accuracy : 0.77312
 
-ROC AUC Score: 0.75023
+ROC AUC Score: 0.79278
 
 #### ensembeld_model
-Precision: 0.91487
+Precision: 0.94210
 
-Recall: 0.99174
+Recall: 0.95828
 
-F1 Score: 0.95175
+F1 Score: 0.95012
 
-Accuracy : 0.82003
+Accuracy : 0.78174
 
-ROC AUC Score: 0.69941
+ROC AUC Score: 0.78559
 
 ### 문제점들
 1. 데이터 라벨링이 쉽지 않음. > 욕설 데이터 생성을 고려중.
@@ -95,6 +95,8 @@ ROC AUC Score: 0.69941
 3. GridSearchCV로 최적의 하이퍼파라미터를 찾는 과정은 너무 많은 컴퓨팅파워를 요구함.
 (괜찮은 해결책이 있다면 kimybj123@naver.com로 알려주시면 정말 감사하겠습니다.)
 
+### 2024/5/20
+데이터를 추가할 수록 성능이 좋아지고 있음. 계속 추가 라벨링하고 훈련하며 더 지켜볼 예정.
 
 
 
