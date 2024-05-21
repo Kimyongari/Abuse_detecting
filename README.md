@@ -43,51 +43,76 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     d. 각 모델의 성능을 출력한다.
     
     e. 세 모델을 softvoting 방식으로 앙상블 한 모델을 만들고, 결과를 반환.
+
+### 5. self_labeling
+    
+    a. pre_trained된 모델을 바탕으로 unlabeled data들을 predict하여 욕설일 확률이 큰 데이터들을 추가로 생성.
+
+    b. self_labeled된 데이터를 기존의 labeled 데이터에 추가
+
+### 6. activation_learning 
+
+    a. pre_trained된 모델의 예측값이 0.3~ 0.7 사이, 즉 욕설인지 아닌지 모델이 애매하게 판단한 것들을 따로 추출.
+
+    b. 애매한 데이터들을 모아 내가 직접 라벨링.(iffy data)
+
+    c. 모아진 데이터들을 추가하여 학습 (labeled data, pseudo labeled data, iffy data)
     
 #### 1DCNN model
-Precision: 0.91497
+Precision: 0.95820
 
-Recall: 0.99018
+Recall: 0.99207
 
-F1 Score: 0.95109
+F1 Score: 0.97484
 
-Accuracy : 0.82327
+Accuracy : 0.86687
 
-ROC AUC Score: 0.69267
+ROC AUC Score: 0.77047
 
 
 #### GRU model
-Precision: 0.95468
+Precision: 0.97827
 
-Recall: 0.80123
+Recall: 0.94158
 
-F1 Score: 0.87125
+F1 Score: 0.95957
 
-Accuracy : 0.66810
+Accuracy : 0.81203
 
-ROC AUC Score: 0.77561
+ROC AUC Score: 0.86177
 
 #### BiDirectional LSTM model
-Precision: 0.94499
+Precision: 0.97165
 
-Recall: 0.94847
+Recall: 0.97656
 
-F1 Score: 0.94672
+F1 Score: 0.97410
 
-Accuracy : 0.77312
+Accuracy : 0.84407
 
-ROC AUC Score: 0.79278
+ROC AUC Score: 0.83978
 
-#### ensembeld_model
-Precision: 0.94210
+#### soft_ensembled_model
+Precision: 0.97084
 
-Recall: 0.95828
+Recall: 0.98449
 
-F1 Score: 0.95012
+F1 Score: 0.97762
 
-Accuracy : 0.78174
+Accuracy : 0.85085
 
-ROC AUC Score: 0.78559
+ROC AUC Score: 0.83811
+
+#### hard_ensembled_model
+Precision: 0.97014
+
+Recall: 0.98413
+
+F1 Score: 0.97709
+
+Accuracy : 0.85112
+
+ROC AUC Score: 0.83417
 
 ### 문제점들
 1. 데이터 라벨링이 쉽지 않음. > 욕설 데이터 생성을 고려중.
@@ -98,5 +123,9 @@ ROC AUC Score: 0.78559
 ### 2024/5/20
 데이터를 추가할 수록 성능이 좋아지고 있음. 계속 추가 라벨링하고 훈련하며 더 지켜볼 예정.
 
+### 2024/5/21
+pseudo labeling 기법을 활용하여 self supervised learning을 적용하니 상당한 성능 향상이 있었다.
+또, 확률이 애매한 데이터를 뽑는 것 까진 했지만, 아직 라벨링을 하지 않았음.
+라벨링까지 하여 다시 학습하면 성능 향상이 기대됨.
 
 
