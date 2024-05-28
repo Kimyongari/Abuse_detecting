@@ -59,60 +59,61 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     c. 모아진 데이터들을 추가하여 학습 (labeled data, pseudo labeled data, iffy data)
     
 #### 1DCNN model
-Precision: 0.95820
+Precision: 0.96871
 
-Recall: 0.99207
+Recall: 0.99347
 
-F1 Score: 0.97484
+F1 Score: 0.98093
 
-Accuracy : 0.86687
+Accuracy : 0.88919
 
-ROC AUC Score: 0.77047
+ROC AUC Score: 0.78545
 
 
 #### GRU model
-Precision: 0.97827
+Precision: 0.97090
 
-Recall: 0.94158
+Recall: 0.98374
 
-F1 Score: 0.95957
+F1 Score: 0.97728
 
-Accuracy : 0.81203
+Accuracy : 0.87933
 
-ROC AUC Score: 0.86177
+ROC AUC Score: 0.79779
 
 #### BiDirectional LSTM model
-Precision: 0.97165
+Precision: 0.97674
 
-Recall: 0.97656
+Recall: 0.96340
 
-F1 Score: 0.97410
+F1 Score: 0.97002
 
-Accuracy : 0.84407
+Accuracy : 0.85789
 
-ROC AUC Score: 0.83978
+ROC AUC Score: 0.83065
+
 
 #### soft_ensembled_model
-Precision: 0.97084
+Precision: 0.97230
 
-Recall: 0.98449
+Recall: 0.98882
 
-F1 Score: 0.97762
+F1 Score: 0.98049
 
-Accuracy : 0.85085
+Accuracy : 0.88235
 
-ROC AUC Score: 0.83811
+ROC AUC Score: 0.80894
 
 #### hard_ensembled_model
-Precision: 0.97014
+Precision: 0.97214
 
-Recall: 0.98413
+Recall: 0.98824
 
-F1 Score: 0.97709
+F1 Score: 0.98012
 
-Accuracy : 0.85112
+Accuracy : 0.88200
 
-ROC AUC Score: 0.83417
+ROC AUC Score: 0.80769
 
 ### 문제점들
 1. 데이터 라벨링이 쉽지 않음. > 욕설 데이터 생성을 고려중.
