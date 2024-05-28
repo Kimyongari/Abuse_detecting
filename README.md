@@ -136,4 +136,5 @@ pseudo labeling 기법을 활용하여 self supervised learning을 적용하니 
 많이 낮았던 roc auc 스코어가 높아졌고, 세 모델의 hard, soft voting accuracy가 88% 이상 나왔다.
 애매한 확률의 데이터를 추가 라벨링 하고 다시 pseudo labeling을 한다면, 성능이 올라갈 것으로 보인다.
 
+* 제작된 모델로 경기별 욕설 분포량을 간단하게 분석한 코드를 추가하였음.
 
