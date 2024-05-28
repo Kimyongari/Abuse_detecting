@@ -44,19 +44,22 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     
     e. 세 모델을 softvoting 방식으로 앙상블 한 모델을 만들고, 결과를 반환.
 
-### 5. self_labeling
-    
-    a. pre_trained된 모델을 바탕으로 unlabeled data들을 predict하여 욕설일 확률이 큰 데이터들을 추가로 생성.
-
-    b. self_labeled된 데이터를 기존의 labeled 데이터에 추가
-
-### 6. activation_learning 
+### 5. activation_learning
 
     a. pre_trained된 모델의 예측값이 0.3~ 0.7 사이, 즉 욕설인지 아닌지 모델이 애매하게 판단한 것들을 따로 추출.
 
     b. 애매한 데이터들을 모아 내가 직접 라벨링.(iffy data)
 
     c. 모아진 데이터들을 추가하여 학습 (labeled data, pseudo labeled data, iffy data)
+    
+### 6. pseudo_labeling
+
+    a. pre_trained된 모델을 바탕으로 unlabeled data들을 predict하여 욕설일 확률이 큰 데이터들을 추가로 생성. (0.3 미만)
+
+    b. self_labeled된 데이터를 기존의 labeled 데이터에 추가.
+
+    c. 합쳐진 데이터를 바탕으로 모델을 훈련.
+
     
 #### 1DCNN model
 Precision: 0.96871
