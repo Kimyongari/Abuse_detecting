@@ -62,62 +62,16 @@ LCK 채팅 데이터 욕설탐지 딥러닝 모델
     c. 합쳐진 데이터를 바탕으로 모델을 훈련.
 
     
-#### 1DCNN model
-Precision: 0.96871
+#### Evaluation Metric
 
-Recall: 0.99347
+| Model                | Precision | Recall  | F1 Score | Accuracy | ROC AUC |
+|---------------------|-----------|---------|----------|----------|---------|
+| 1D CNN              | 0.96871   | 0.99347 | 0.98093  | 0.88919  | 0.78545 |
+| GRU                 | 0.97090   | 0.98374 | 0.97728  | 0.87933  | 0.79779 |
+| BiLSTM              | 0.97674   | 0.96340 | 0.97002  | 0.85789  | 0.83065 |
+| Soft Ensemble       | 0.97230   | 0.98882 | 0.98049  | 0.88235  | 0.80894 |
+| Hard Ensemble       | 0.97214   | 0.98824 | 0.98012  | 0.88200  | 0.80769 |
 
-F1 Score: 0.98093
-
-Accuracy : 0.88919
-
-ROC AUC Score: 0.78545
-
-
-#### GRU model
-Precision: 0.97090
-
-Recall: 0.98374
-
-F1 Score: 0.97728
-
-Accuracy : 0.87933
-
-ROC AUC Score: 0.79779
-
-#### BiDirectional LSTM model
-Precision: 0.97674
-
-Recall: 0.96340
-
-F1 Score: 0.97002
-
-Accuracy : 0.85789
-
-ROC AUC Score: 0.83065
-
-
-#### soft_ensembled_model
-Precision: 0.97230
-
-Recall: 0.98882
-
-F1 Score: 0.98049
-
-Accuracy : 0.88235
-
-ROC AUC Score: 0.80894
-
-#### hard_ensembled_model
-Precision: 0.97214
-
-Recall: 0.98824
-
-F1 Score: 0.98012
-
-Accuracy : 0.88200
-
-ROC AUC Score: 0.80769
 
 ### 문제점들
 1. 데이터 라벨링이 쉽지 않음. > 욕설 데이터 생성을 고려중.
